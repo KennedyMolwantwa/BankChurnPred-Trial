@@ -25,63 +25,51 @@ def churn_prediction(input_data):
 def main():
     # giving a title
     st.title('Bank Customer Churn Prediction')
-    col1, col2, col3 = st.columns(3)
 
-    with col1:
-        # getting the input data from the user
-        CreditScore = st.text_input('Credit Score')
+    # getting the input data from the user
+    CreditScore = st.text_input('Credit Score')
 
-    with col2:
-        Age = st.text_input('Age')
+    Age = st.text_input('Age')
 
-    with col3:
-        Tenure = st.text_input('Tenure')
+    Tenure = st.text_input('Tenure')
 
-    with col1:
-        Balance = st.text_input('Balance')
+    Balance = st.text_input('Balance')
 
-    with col2:
-        NumOfProducts = st.selectbox('Number of Products', [1, 2, 3, 4])
+    NumOfProducts = st.selectbox('Number of Products', [1, 2, 3, 4])
 
-    with col3:
-        HasCrCard = st.selectbox('Have A Credit Card?', ['Yes','No'])
-        if HasCrCard == 'Yes':
-            HasCrCard = 1
-        else:
-            HasCrCard = 0
+    HasCrCard = st.selectbox('Have A Credit Card?', ['Yes','No'])
+    if HasCrCard == 'Yes':
+        HasCrCard = 1
+    else:
+        HasCrCard = 0
 
-    with col1:
-        IsActive = st.selectbox('Is Active Member', ['Yes','No'])
-        if IsActive == 'Yes':
-            IsActive = 1
-        else:
-            IsActive = 0
+    IsActive = st.selectbox('Is Active Member', ['Yes','No'])
+    if IsActive == 'Yes':
+        IsActive = 1
+    else:
+        IsActive = 0
 
-    with col2:
-        EstimatedSalary = st.text_input('Estimated Salary')
+    EstimatedSalary = st.text_input('Estimated Salary')
 
-    with col3:
-        Gender_Male = st.selectbox('Gender', ['Male','Female'])
-        if Gender_Male == 'Male':
-            Gender_Male = 1
-        else:
-            Gender_Male = 0
-            
+    Gender_Male = st.selectbox('Gender', ['Male','Female'])
+    if Gender_Male == 'Male':
+        Gender_Male = 1
+    else:
+        Gender_Male = 0
+
     st.text("If Geography is France, Select the following as 'No'")
-    
-    with col1:
-        Geography_Germany = st.selectbox('Is Geography Germany?', ['Yes','No'])
-        if Geography_Germany == 'Yes':
-            Geography_Germany = 1
-        else:
-            Geography_Germany = 0
-            
-    with col2:
-        Geography_Spain = st.selectbox('Is Geography Spain?', ['Yes','No'])
-        if Geography_Spain == 'Yes':
-            Geography_Spain = 1
-        else:
-            Geography_Spain = 0
+
+    Geography_Germany = st.selectbox('Is Geography Germany?', ['Yes','No'])
+    if Geography_Germany == 'Yes':
+        Geography_Germany = 1
+    else:
+        Geography_Germany = 0
+
+    Geography_Spain = st.selectbox('Is Geography Spain?', ['Yes','No'])
+    if Geography_Spain == 'Yes':
+        Geography_Spain = 1
+    else:
+        Geography_Spain = 0
     
     # code for Prediction
     my_prediction = ''
