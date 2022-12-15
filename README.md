@@ -1,2 +1,2 @@
 # BankChurnPred-Trial
-This is test-trail repository.
+This is test-trial repository.
