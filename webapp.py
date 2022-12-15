@@ -66,7 +66,8 @@ def main():
             Gender_Male = 1
         else:
             Gender_Male = 0
-        st.text("If Geography is France, Select the following as 'No'")
+            
+    st.text("If Geography is France, Select the following as 'No'")
     
     with col1:
         Geography_Germany = st.selectbox('Is Geography Germany?', ['Yes','No'])
