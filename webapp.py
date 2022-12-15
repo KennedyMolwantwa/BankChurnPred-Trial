@@ -1,5 +1,5 @@
 import numpy as np
-import pickle
+import pickle-mixin
 import streamlit as st
 
 # Create function for prediciton
