@@ -4,7 +4,7 @@ import streamlit as st
 
 # Create function for prediciton
 # Load the model
-loaded_model = pickle.load(open("svm_model2.sav",'rb'))
+loaded_model = pickle.load(open("svm_model.sav",'rb'))
 
 @st.cache
 def churn_prediction(input_data):
