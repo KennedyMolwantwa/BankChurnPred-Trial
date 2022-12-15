@@ -35,7 +35,7 @@ def main():
 
     Balance = st.text_input('Balance')
 
-    NumOfProducts = st.selectbox('Number of Products', [1, 2, 3, 4])
+    NumOfProducts = st.selectbox('Number of Products', [0, 1, 2, 3, 4])
 
     HasCrCard = st.selectbox('Have A Credit Card?', ['Yes','No'])
     if HasCrCard == 'Yes':
